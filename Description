@@ -9,3 +9,18 @@ However, in the CAD design, we need to assign these thicknesses to different col
 So, if the users want to move an object to a layer of thickness 0.2 mm for example they just press "2" - "space". If the layer is of thickness 0.3 mm - "3" - "space" and so on.
 The commands work also with pick first method.
 The layers are designed with different colors in order to be easily distinguishable.
+
+ChangeObjectsLineType.lsp -
+This file offers commands to change the line type of an object to HIDDEN with 3 different scales and DASHDOT with 3 different scales as well.
+
+1` - key for small-scale HIDDEN
+21 - key for average-scale HIDDEN
+32 - key for large-scale HIDDEN
+
+11` - key for small-scale DASHDOT
+221 - key for average-scale DASHDOT
+332 - key for large-scale DASHDOT
+
+`` - key for continuous line belonging to the containing layer
+
+You may notice that the keys are in close proximity, which is designed to achieve high drawing speed.
