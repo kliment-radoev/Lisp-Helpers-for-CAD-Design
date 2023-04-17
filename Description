@@ -1,0 +1,4 @@
+The repository contains multiple AutoLISP files to aid and advance architectural design. All of the files should be uploaded with APPLOAD (application load) command in AutoCAD.
+They have been constantly upgrading and improving as a whole system from version AutoCAD 14. Each file wears a name describing its function.
+In order to use the files Layers.dwg should be imported.
+This system of shortcuts, command sets, and functions was designed to bring extreme speed and improvement of drawing. The design time can be reduced by up to 60%
