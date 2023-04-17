@@ -7,4 +7,5 @@ ChangeObjectsLayer.lsp -
 In architectural design in the past professionals have been using sets of fineliners to make their drawings. They have been able to draw lines with thicknesses from 0.2 mm to 1 mm.
 However, in the CAD design, we need to assign these thicknesses to different colors and layers. These layers were initially designed within Layers.dwg. Their thicknesses were set up in the plotting file Thicknesses.ctb .
 So, if the users want to move an object to a layer of thickness 0.2 mm for example they just press "2" - "space". If the layer is of thickness 0.3 mm - "3" - "space" and so on.
+The commands work also with pick first method.
 The layers are designed with different colors in order to be easily distinguishable.
