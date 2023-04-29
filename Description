@@ -3,14 +3,43 @@ They have been constantly upgrading and improving as a whole system from version
 In order to use the files Layers.dwg should be imported.
 This system of shortcuts, command sets, and functions was designed to bring extreme speed and improvement of drawing. The design time can be reduced by up to 60%
 
-ChangeObjectsLayer.lsp -
+😊😊😊 ChangeObjectsLayer.lsp -
 In architectural design in the past professionals have been using sets of fineliners to make their drawings. They have been able to draw lines with thicknesses from 0.2 mm to 1 mm.
 However, in the CAD design, we need to assign these thicknesses to different colors and layers. These layers were initially designed within Layers.dwg. Their thicknesses were set up in the plotting file Thicknesses.ctb .
-So, if the users want to move an object to a layer of thickness 0.2 mm for example they just press "2" - "space". If the layer is of thickness 0.3 mm - "3" - "space" and so on.
+So, if the users want to move an object to a layer of thickness 0.2 mm for example they just press "2" -> "space". Then the object moves to layer "ZZ020".
+If the layer is of thickness 0.3 mm - "3" -> "space". Then the object moves to layer "ZZ030" and so on.
+The logic here is "layer shortcut" -> "space"
+
+List of all layer shortcuts:
+"0" - layer "0' (always existing)
+"`" - "Zz00Spec"
+"11" - "ZZ010" (exception)
+"1" - "ZZ015"
+"2" - "ZZ020"
+"22" - "ZZ025" (exception)
+"3" - ZZ030"
+"4" - "ZZ040"
+"5" - "ZZ050"
+"6" - "ZZ060"
+"7" - "ZZ070"
+"8" - "ZZ080"
+"9" - "ZZ090"
+
+"-" - "ZZ00Hatch"
+"s`" - "ZZS000"
+"s1" - "ZZS010"
+"s2" - "ZZS020"
+"s3" - "ZZS030"
+"s4" - "ZZS040"
+"s5" - "ZZS050"
+
+"ZZ" in front of the layers thickness indication "020" guarantees that all the layers from the system will appear at the bottom of the list - closer to the mouse and the eyes of the user.
+There are several additional layers -for regular hatch (zz00Hatch) and for shades of gray hatching (from ZZS000 to ZZS050). Relevant commands for them are "s1 to s5".
+
 The commands work also with pick first method.
 The layers are designed with different colors in order to be easily distinguishable.
 
-ChangeObjectsLineType.lsp -
+😊😊😊 ChangeObjectsLineType.lsp -
 This file offers commands to change the line type of an object to HIDDEN with 3 different scales and DASHDOT with 3 different scales as well.
 
 1` - key for small-scale HIDDEN
@@ -23,4 +52,38 @@ This file offers commands to change the line type of an object to HIDDEN with 3 
 
 `` - key for continuous line belonging to the containing layer
 
-You may notice that the keys are in close proximity, which is designed to achieve high drawing speed.
+You may notice that the keys are in close proximity, which is designed to achieve high drawing speed. It is applied to all keyboard shortcuts of the system.
+
+😊😊😊 ChangeCurrentLayer.lsp -
+This file offers commands to quickly change the current layer - the layer on which the user is drawing.
+All shortcuts are composed of two consecutive keys on the keyboard.
+They start with the key name of the layer, for example "2" for "ZZ020" and continue with the key immediately to the right of it. 
+The ligic here is "layer shortcut" -> "right to it key" -> "space"
+This guarantees extreme speed. Perhaps you imagine that the difference in this operation with and without such abbreviated command can be no more than 1 - 2 seconds and the loss is not so significant.
+On the one hand, when the user draws such an operation may be required hundreds of times and this starts to save minutes.
+On the other hand, the whole system is designed so that it offers all possible commands from a full-fledged design process. 
+So every operation suggested here is a time saver and finally the overall result is surprisingly good.
+
+😊😊😊 OffSpecifiedLayer.lsp
+Off specified layer from the system's layer set.
+"f" -> "layer shortcut" -> "space"
+So "f2" off the layer "ZZ020"
+"f3" off the layer "ZZ030" and so on.
+
+😊😊😊 OnSpecifiedLayer.lsp
+On specified layer from the system's layer set.
+"o" -> "layer shortcut" -> "space"
+So "o2" on the layer "ZZ020"
+"o3" on the layer "ZZ030" and so on.
+
+😊😊😊 FreezeSpecifiedLayer.lsp
+Freezes specified layer from the system's layer set.
+"r" -> "layer shortcut" -> "space"
+So "r2" freezes the layer "ZZ020"
+"r3" freezes the layer "ZZ030" and so on.
+
+😊😊😊 ThawSpecifiedLayer.lsp
+Thaws specified layer from the system's layer set.
+"t" -> "layer shortcut" -> "space"
+So "t2" thaws the layer "ZZ020"
+"t3" thaws the layer "ZZ030" and so on.
