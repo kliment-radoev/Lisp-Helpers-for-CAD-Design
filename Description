@@ -78,9 +78,9 @@ So "o2" on the layer "ZZ020"
 
 😊😊😊 FreezeSpecifiedLayer.lsp
 Freezes specified layer from the system's layer set.
-"r" -> "layer shortcut" -> "space"
-So "r2" freezes the layer "ZZ020"
-"r3" freezes the layer "ZZ030" and so on.
+"fr" -> "layer shortcut" -> "space"
+So "fr2" freezes the layer "ZZ020"
+"fr3" freezes the layer "ZZ030" and so on.
 
 😊😊😊 ThawSpecifiedLayer.lsp
 Thaws specified layer from the system's layer set.
